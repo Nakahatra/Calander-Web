@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --poppins-weight-100: 100;
+    --poppins-weight-300: 300;
+    --poppins-weight-700: 700;
+    --bg-color: #D9DCD6;
+    --bg-calculator: #e9c46a;
+    --primary-color: #81C3D7;
+    --dark-color: #3d3d3d;
+    --light-color: #838486;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: var(--poppins-weight-300);
+}
+
+#calander-parent {
+    background-color: var(--dark-color);
+    height: 100%;
+    width: 50%;
+}
+
+#calander-parent .today-tomorrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 30px; */
+    /* margin-left: 10px; */
+}
+
+
+
+#calander-parent .today-tomorrow h3{
+    color: var(--bg-color);
+    align-items: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.199);
+    padding: 10px;
+    border-radius: 30px 30px;
+}
+
+#calander-parent .months{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--bg-color);
+    padding: 10px;
+}
+
+#calander-parent .months span{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: var(--poppins-weight-700);
+    border-radius: 20px;
+    background-color: var(--bg-color);
+}
+
+#calander-parent .mnths-names ul{
+    text-align: center;
+    color: var(--light-color);
+    font-weight: var(--poppins-weight-700);
+}
+
+#calander-parent .mnths-names ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#calander-parent .mnths-dates ul{
+    text-align: center;
+    padding: 10px;
+}
+
+#calander-parent .mnths-dates ul li{
+    color: var(--bg-color);
+    display: inline-flex;
+    padding: 15px;
+    font-weight: var(--poppins-weight-700);
+}
+
+#calander-parent .ad-reminder{
+    text-align: center;
+}
+
+#calander-parent .ad-reminder span{
+    color: var(--bg-color);
+    font-weight: var(--poppins-weight-700);
+}
+
+#calander-parent .buttons {
+    display: flex;
+    justify-content: center;  
+    padding: 20px;  
+}
+
+#calander-parent .buttons a{
+    text-decoration: none;
+    color: var(--dark-color);
+    padding: 10px;
+    margin-left: 10px;
+    background-color: var(--bg-color);
+    border-radius: 40px;
+}
+
